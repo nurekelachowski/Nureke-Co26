@@ -1,0 +1,126 @@
+# Nureke-Co26
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Нурхан — IT специалист</title>
+  <style>
+    :root {
+      --bg: #2e3d2f;
+      --text: #f5f2e8;
+      --muted: #b8c0b5;
+      --gold: #5c7c62;
+      --gold-2: #7f9b84;
+      --card: #3a4a3c;
+      --grad: linear-gradient(135deg, #5c7c62, #b5b08f);
+    }
+    body.light {
+      --bg: #f5f2e8;
+      --text: #2e3d2f;
+      --muted: #6d7769;
+      --gold: #5c7c62;
+      --gold-2: #7f9b84;
+      --card: #faf8f2;
+      --grad: linear-gradient(135deg, #b5b08f, #5c7c62);
+    }
+    body {
+      margin:0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height:1.6;
+      transition: background 0.3s, color 0.3s;
+    }
+    h1,h2,h3 { margin:0; }
+    h1 { font-size: 28px; background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    h2 { font-size: 22px; margin-bottom:12px; background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    h3 { font-size: 18px; }
+    .container { width: 92%; max-width: 800px; margin: 0 auto; padding: 20px 0; }
+    header { text-align:center; padding:20px 0; }
+    .lang-switch { display:flex; justify-content:center; gap:10px; margin:12px 0; flex-wrap: wrap; }
+    .btn { background: var(--grad); color:#fff; padding:8px 14px; border-radius:8px; font-weight:600; border:none; cursor:pointer; }
+    .btn:hover { filter: brightness(1.1); }
+    /* услуги */
+    .services-list { display:flex; flex-direction:column; gap:16px; }
+    .service-card {
+      display:flex; justify-content:space-between; align-items:center;
+      background: var(--card);
+      border:1px solid var(--gold);
+      border-radius:14px;
+      padding:16px 20px;
+      box-shadow:0 4px 12px rgba(92,124,98,0.25);
+      transition:0.2s;
+      opacity: 0; transform: translateY(30px);
+    }
+    .service-card.visible { opacity:1; transform:translateY(0); transition:0.6s; }
+    .service-card h3 { color:var(--gold); margin-bottom:4px; }
+    .service-card p { margin:0; font-size:14px; color:var(--muted); }
+    .price { font-weight:700; font-size:18px; color:var(--gold-2); white-space:nowrap; }
+    .old-price { text-decoration:line-through; color:gray; font-size:14px; margin-right:8px; }
+    /* отзывы */
+    .reviews { display:flex; flex-direction:column; gap:14px; }
+    .review {
+      background: var(--card);
+      border-left:4px solid var(--gold);
+      border-radius:10px;
+      padding:14px 16px;
+      font-size:15px;
+      opacity:0; transform:translateY(30px);
+    }
+    .review.visible { opacity:1; transform:translateY(0); transition:0.6s; }
+    .review strong { color:var(--gold); }
+    /* FAQ */
+    .faq { display:flex; flex-direction:column; gap:14px; margin-top:30px; }
+    .faq-item {
+      background: var(--card);
+      border:1px solid var(--gold);
+      border-radius:10px;
+      padding:12px 16px;
+      opacity:0; transform:translateY(30px);
+    }
+    .faq-item.visible { opacity:1; transform:translateY(0); transition:0.6s; }
+    .faq-item h3 { font-size:16px; margin-bottom:6px; color:var(--gold); }
+    /* контакты */
+    .contacts { display:flex; flex-wrap:wrap; gap:10px; margin-top:14px; }
+    .chip {
+      display:flex; align-items:center; gap:8px;
+      padding:10px 14px;
+      background: var(--grad);
+      border:1px solid var(--gold);
+      border-radius:12px;
+      font-weight:600;
+      color:#fff;
+      text-decoration:none;
+      animation:pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% {transform:scale(1);}
+      50% {transform:scale(1.05);}
+      100% {transform:scale(1);}
+    }
+    /* кнопка заказать */
+    .order-btn {
+      display:block;
+      margin:30px auto;
+      background: var(--grad);
+      color:#fff;
+      padding:14px 22px;
+      border-radius:10px;
+      font-weight:700;
+      font-size:18px;
+      text-align:center;
+      text-decoration:none;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 50%, 100% {opacity:1;}
+      25%, 75% {opacity:0.4;}
+    }
+    footer { text-align:center; padding:20px 0; font-size:14px; color:var(--muted); }
+  </style>
+</head>
+<body>
+  <!-- остальной HTML и JS твой же -->
+</body>
+</html>
